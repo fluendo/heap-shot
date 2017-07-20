@@ -31,7 +31,6 @@ using HeapShot.Gui.Widgets;
 using HeapShot.Reader;
 using System.Diagnostics;
 using System.Threading;
-using IgeMacIntegration;
 
 public partial class MainWindow: Gtk.Window
 {
@@ -60,10 +59,10 @@ public partial class MainWindow: Gtk.Window
 		
 		if (PlatformDetection.IsMac) {
 			//enable the global key handler for keyboard shortcuts
-			IgeMacMenu.GlobalKeyHandlerEnabled = true;
+			//IgeMacMenu.GlobalKeyHandlerEnabled = true;
 
 			//Tell the IGE library to use your GTK menu as the Mac main menu
-			IgeMacMenu.MenuBar = this.menubar1;
+			//IgeMacMenu.MenuBar = this.menubar1;
 
 			//hide the menu bar so it no longer displays within the window
 			this.menubar1.Hide ();
